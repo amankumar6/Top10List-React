@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Top10List-React/static/css/main.76b4dfff.chunk.css",
+    "main.js": "/Top10List-React/static/js/main.3a182fbc.chunk.js",
+    "main.js.map": "/Top10List-React/static/js/main.3a182fbc.chunk.js.map",
+    "runtime-main.js": "/Top10List-React/static/js/runtime-main.e565954e.js",
+    "runtime-main.js.map": "/Top10List-React/static/js/runtime-main.e565954e.js.map",
+    "static/js/2.48dcee11.chunk.js": "/Top10List-React/static/js/2.48dcee11.chunk.js",
+    "static/js/2.48dcee11.chunk.js.map": "/Top10List-React/static/js/2.48dcee11.chunk.js.map",
+    "static/js/3.1c117feb.chunk.js": "/Top10List-React/static/js/3.1c117feb.chunk.js",
+    "static/js/3.1c117feb.chunk.js.map": "/Top10List-React/static/js/3.1c117feb.chunk.js.map",
+    "index.html": "/Top10List-React/index.html",
+    "static/css/main.76b4dfff.chunk.css.map": "/Top10List-React/static/css/main.76b4dfff.chunk.css.map",
+    "static/js/2.48dcee11.chunk.js.LICENSE.txt": "/Top10List-React/static/js/2.48dcee11.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/Top10List-React/static/media/webSeries.21136f9e.jpg",
+    "static/media/other.css": "/Top10List-React/static/media/other.11241277.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e565954e.js",
+    "static/js/2.48dcee11.chunk.js",
+    "static/css/main.76b4dfff.chunk.css",
+    "static/js/main.3a182fbc.chunk.js"
+  ]
+}
