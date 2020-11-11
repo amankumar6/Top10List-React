@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.nav-extended{
+    background: rgb(27, 40, 56) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    position: fixed !important;
+    top: 0;
+}
+
+.brand-logo{
+    margin-left: 1.5rem;
+}
+
+.sidenav{
+    background: rgb(36, 54, 75) !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.sidenav li a{
+    color: white !important;
+}
+
+#anime{
+    background: url("/src/image/anime.jpg");
+}
+
+#games{
+    background: url("/src/image/games.jpg");
+}
+
+#movies{
+    background: url("/src/image/movies.jpg");
+}
+
+#musicVideo{
+    background: url("/src/image/musicVideo.jpg");
+}
+
+#webSeries{
+    background: url("/src/image/webSeries.jpg");
+}
+
+#anime,#games,#movies,#musicVideo,#webSeries{
+    padding: 140px 30px 0 30px ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

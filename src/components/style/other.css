@@ -1,0 +1,26 @@
+.help,
+.feedback {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url("/src/image/other.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4rem;
+}
+
+.help h1,
+.feedback h1{
+    font-family: 'Montserrat', sans-serif ;
+    color: #30afbf;
+}
+
+.help p,
+.feedback p {
+    color: white;
+    font-family: muli, sans-serif;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+}
