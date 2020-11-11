@@ -44,7 +44,7 @@ export class footer extends Component {
                                     <i className="fab fa-facebook"></i>
                                 </a>
                                 <a href="https://www.instagram.com/amankumar062/" target="_blank" rel="noreferrer" className="valign-wrapper">
-                                    <img src="/instagram.svg" alt="Instagram" width="29px" />
+                                    <img src="https://res.cloudinary.com/dbvthtwhc/image/upload/v1605103035/instagram_d1s8a5.svg" alt="Instagram" width="29px" />
                                 </a>
                                 <a href="https://twitter.com/amankumar062" target="_blank" rel="noreferrer">
                                     <i className="fab fa-twitter"></i>
