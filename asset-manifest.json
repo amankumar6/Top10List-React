@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/top10list/static/css/main.8e758272.chunk.css",
-    "main.js": "/top10list/static/js/main.6dfd01e7.chunk.js",
-    "main.js.map": "/top10list/static/js/main.6dfd01e7.chunk.js.map",
-    "runtime-main.js": "/top10list/static/js/runtime-main.53e05bdb.js",
-    "runtime-main.js.map": "/top10list/static/js/runtime-main.53e05bdb.js.map",
-    "static/js/2.48dcee11.chunk.js": "/top10list/static/js/2.48dcee11.chunk.js",
-    "static/js/2.48dcee11.chunk.js.map": "/top10list/static/js/2.48dcee11.chunk.js.map",
-    "static/js/3.1c117feb.chunk.js": "/top10list/static/js/3.1c117feb.chunk.js",
-    "static/js/3.1c117feb.chunk.js.map": "/top10list/static/js/3.1c117feb.chunk.js.map",
-    "index.html": "/top10list/index.html",
-    "static/css/main.8e758272.chunk.css.map": "/top10list/static/css/main.8e758272.chunk.css.map",
-    "static/js/2.48dcee11.chunk.js.LICENSE.txt": "/top10list/static/js/2.48dcee11.chunk.js.LICENSE.txt",
-    "static/media/home.css": "/top10list/static/media/webSeries.21136f9e.jpg",
-    "static/media/other.css": "/top10list/static/media/other.11241277.jpg"
+    "main.css": "/static/css/main.706726ad.chunk.css",
+    "main.js": "/static/js/main.6dfd01e7.chunk.js",
+    "main.js.map": "/static/js/main.6dfd01e7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7f551b47.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7f551b47.js.map",
+    "static/js/2.48dcee11.chunk.js": "/static/js/2.48dcee11.chunk.js",
+    "static/js/2.48dcee11.chunk.js.map": "/static/js/2.48dcee11.chunk.js.map",
+    "static/js/3.1c117feb.chunk.js": "/static/js/3.1c117feb.chunk.js",
+    "static/js/3.1c117feb.chunk.js.map": "/static/js/3.1c117feb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.706726ad.chunk.css.map": "/static/css/main.706726ad.chunk.css.map",
+    "static/js/2.48dcee11.chunk.js.LICENSE.txt": "/static/js/2.48dcee11.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/static/media/webSeries.21136f9e.jpg",
+    "static/media/other.css": "/static/media/other.11241277.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.53e05bdb.js",
+    "static/js/runtime-main.7f551b47.js",
     "static/js/2.48dcee11.chunk.js",
-    "static/css/main.8e758272.chunk.css",
+    "static/css/main.706726ad.chunk.css",
     "static/js/main.6dfd01e7.chunk.js"
   ]
 }
