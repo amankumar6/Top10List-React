@@ -1,5 +1,5 @@
 {
-  "homepage": "https://amankumar6.github.io/",
+  "homepage": "https://amankumar6.github.io/Top10List-React",
   "name": "top10list",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "serve": "^11.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
