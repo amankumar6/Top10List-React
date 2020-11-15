@@ -23,8 +23,8 @@ export class home extends Component {
                     </div>
                     <div className="nav-content">
                         <ul className="tabs tabs-transparent">
-                            <li className="tab"><a className="active" href="#anime">Anime</a></li>
-                            <li className="tab"><a href="#games">Games</a></li>
+                            <li className="tab"><a href="#anime">Anime</a></li>
+                            <li className="tab"><a className="active" href="#games">Games</a></li>
                             <li className="tab"><a href="#movies">Movies</a></li>
                             <li className="tab"><a href="#musicVideo">Music Video</a></li>
                             <li className="tab"><a href="#webSeries">Web Series</a></li>

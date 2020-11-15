@@ -1,21 +1,74 @@
 import React, { Component } from 'react'
 import '../style/other.css'
 
-export class contact extends Component {
+export class feedback extends Component {
     render() {
         return (
             <div className="feedback">
                 <div className="container">
-                    <h1>FeedBack</h1>
+                    <h1>
+                        FeedBack
+                    </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar tempus risus et varius. Vestibulum finibus ac elit in consequat. Curabitur lacinia convallis ligula, quis maximus tortor gravida in. Duis pharetra neque in varius hendrerit. Curabitur pretium massa eu dui aliquam, sed tempus ipsum convallis. Duis vulputate eros eu libero tincidunt egestas. Duis tincidunt leo nec arcu faucibus rutrum. Donec malesuada vitae leo vitae tincidunt.
-                        <br/>
-                        Curabitur sapien nisi, varius vitae tempus a, suscipit sit amet ipsum. Vivamus vitae felis posuere, condimentum lacus eu, iaculis velit. Sed mattis sagittis congue. In hac habitasse platea dictumst. Aenean ultricies, magna ac ultricies rutrum, arcu sem blandit mi, commodo pellentesque est massa vel risus. Curabitur at fringilla nisl, quis pharetra lacus. Quisque nisl enim, aliquam at ullamcorper ac, cursus id mi. Nunc fringilla mi et nibh sollicitudin accumsan. Duis suscipit, enim sit amet tempus suscipit, magna metus tincidunt nisl, in consequat dui tellus vitae ligula. Suspendisse commodo, elit eu pretium posuere, nisl ex dictum est, aliquet rutrum dolor orci eu ante. Pellentesque vel mi ipsum. Maecenas lobortis, risus ut consectetur scelerisque, nunc tellus porta libero, eget dignissim quam urna nec lectus. Vestibulum ornare sodales lorem vel porttitor.
+                        We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!
                     </p>
+                    <form action="#">
+                        <div className="row">
+                            <div className="col s12">
+                                <p>Feedback Type</p>
+                                <br/>
+                                <div className="col s12 m7 feedbackType">
+                                    <label>
+                                        <input name="group1" type="radio"/>
+                                        <span>Comments</span>
+                                    </label>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Suggestions</span>
+                                    </label>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Questions</span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="input-field col s12">
+                                <textarea id="describe" className="materialize-textarea"></textarea>
+                                <label for="describe">Describe Your Feedback:</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="first_name" type="text"/>
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="last_name" type="text"/>
+                                <label for="last_name">Last Name</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="email" type="email" className="validate"/>
+                                <label for="email">Email</label>
+                                <span className="helper-text" data-error="Invalid Email ID" data-success=""></span>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="icon_contact" type="tel"/>
+                                <label for="icon_contact">Contact Number</label>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="input-field col s2 offset-s5">
+                                <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i className="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         )
     }
 }
 
-export default contact
+export default feedback

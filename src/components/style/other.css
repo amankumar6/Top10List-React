@@ -12,9 +12,13 @@
 }
 
 .help h1,
-.feedback h1{
-    font-family: 'Montserrat', sans-serif ;
+.feedback h1 {
+    font-family: 'Montserrat', sans-serif;
     color: #30afbf;
+}
+
+.feedback h1 {
+    margin-bottom: 0.4rem;
 }
 
 .help p,
@@ -23,4 +27,81 @@
     font-family: muli, sans-serif;
     letter-spacing: 0.4px;
     word-spacing: 1px;
+}
+
+.feedback p {
+    padding-left: 0.3rem;
+}
+
+form {
+    margin-top: 2rem;
+    background-color: beige;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+form .row .col p {
+    color: black;
+    font-size: 1.4rem;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #4ea8d4;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #4ea8d4;
+}
+
+
+.feedbackType {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+}
+
+input,
+textarea {
+    color: black;
+    font-family: muli, sans-serif;
+}
+
+.input-field label,
+.materialize-textarea label {
+    color: #4ea8d4 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.input-field input[type=text]:focus+label,
+.materialize-textarea input[type=text]:focus+label {
+    color: #4ea8d4 !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=tel]:focus,
+.materialize-textarea:focus {
+    border-bottom: 1px solid #4ea8d4 !important;
+    box-shadow: 0 1px 0 0 #4ea8d4 !important;
+}
+
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #4ea8d4 !important;
+    box-shadow: 0 1px 0 0 #4ea8d4 !important;
+}
+
+.btn {
+    background: dodgerblue;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.btn:hover {
+    background: rgba(30, 144, 255, 0.85);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
