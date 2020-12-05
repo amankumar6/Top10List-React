@@ -50,7 +50,7 @@ export class feedback extends Component {
                             <div className="input-field col s6">
                                 <input id="email" type="email" className="validate"/>
                                 <label for="email">Email</label>
-                                <span className="helper-text" data-error="Invalid Email ID" data-success=""></span>
+                                <span className="helper-text" data-error="We can’t quite understand that email address. Can you try again?" data-success=""></span>
                             </div>
                             <div className="input-field col s6">
                                 <input id="icon_contact" type="tel"/>
