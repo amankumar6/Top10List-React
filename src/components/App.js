@@ -41,6 +41,7 @@ export class App extends Component {
     this.setState({
       myData: myNewData,
     });
+    alert("FeedBack has been submitted Successfully!!");
   };
 
   render() {

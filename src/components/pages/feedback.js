@@ -7,19 +7,38 @@ export class Feedback extends Component {
   emailRef = React.createRef();
   contactRef = React.createRef();
   discRef = React.createRef();
+  checkBoxRef = React.createRef();
 
   static propType = {
     formData: PropType.func,
   };
 
+  componentDidMount() {
+    const localStorageDetails = JSON.parse(
+      localStorage.getItem("FeedBackDetails")
+    );
+    if (localStorageDetails) {
+      this.nameRef.current.value = localStorageDetails.name;
+      this.emailRef.current.value = localStorageDetails.email;
+      this.contactRef.current.value = localStorageDetails.contact;
+    }
+  }
+
   createData = (e) => {
-    e.preventDefault();
     const formData = {
       name: this.nameRef.current.value,
       email: this.emailRef.current.value,
       contact: parseFloat(this.contactRef.current.value),
       disc: this.discRef.current.value,
     };
+    if (this.checkBoxRef.current.checked) {
+      const localData = {
+        name: this.nameRef.current.value,
+        email: this.emailRef.current.value,
+        contact: parseFloat(this.contactRef.current.value),
+      };
+      localStorage.setItem("FeedBackDetails", JSON.stringify(localData));
+    }
     this.props.formData(formData);
     e.currentTarget.reset();
   };
@@ -38,7 +57,14 @@ export class Feedback extends Component {
               <div className="inputName col s12">
                 <div className="input-field col m6 s12">
                   <input id="name" ref={this.nameRef} type="text" required />
-                  <label htmlFor="name">Name</label>
+                  <label
+                    htmlFor="name"
+                    className={`${
+                      localStorage.getItem("FeedBackDetails") ? "active" : ""
+                    }`}
+                  >
+                    Name
+                  </label>
                 </div>
               </div>
               <div className="input-field col m6 s12">
@@ -49,7 +75,14 @@ export class Feedback extends Component {
                   className="validate"
                   required
                 />
-                <label htmlFor="email">Email</label>
+                <label
+                  htmlFor="email"
+                  className={`${
+                    localStorage.getItem("FeedBackDetails") ? "active" : ""
+                  }`}
+                >
+                  Email
+                </label>
                 <span
                   className="helper-text"
                   data-error="We can’t quite understand that email address. Can you try again?"
@@ -58,7 +91,14 @@ export class Feedback extends Component {
               </div>
               <div className="input-field col m6 s12">
                 <input id="contact" ref={this.contactRef} type="tel" required />
-                <label htmlFor="contact">Contact Number</label>
+                <label
+                  htmlFor="contact"
+                  className={`${
+                    localStorage.getItem("FeedBackDetails") ? "active" : ""
+                  }`}
+                >
+                  Contact Number
+                </label>
               </div>
               <div className="input-field col s12">
                 <textarea
@@ -71,7 +111,7 @@ export class Feedback extends Component {
               <div className="input-field col s12">
                 <p>
                   <label>
-                    <input type="checkbox" />
+                    <input type="checkbox" ref={this.checkBoxRef} />
                     <span>
                       Save my name, contact number, and email in this browser
                       for the next time when I give feedback.
