@@ -20,6 +20,10 @@ export class App extends Component {
     });
   }
 
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
+
   formatDate = () => {
     let today = new Date(),
       date = String(today.getDate()).padStart(2, "0"),
