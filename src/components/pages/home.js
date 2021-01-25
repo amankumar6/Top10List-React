@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../../css/home.css";
+import "../../style/home.sass";
 import Content from "../view/Content";
 
 export class Home extends Component {

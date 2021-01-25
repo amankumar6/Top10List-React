@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "../css/App.css";
 import Home from "./pages/Home";
 import Help from "./pages/Help";
 import Feedback from "./pages/Feedback";
 import NavBarAlt from "./view/NavBarAlt";
 import Footer from "./view/Footer";
+import "../style/App.sass";
 import base from "../base";
 
 export class App extends Component {

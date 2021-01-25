@@ -5,7 +5,7 @@ import gamesContent from "../Content/gamesContent";
 import moviesContent from "../Content/moviesContent";
 import musicVideoContent from "../Content/musicVideoContent";
 import webSeriesContent from "../Content/webSeriesContent";
-import "../../css/list.css";
+import "../../style/list.sass";
 
 export class Content extends Component {
   static propType = {
@@ -59,7 +59,7 @@ export class Content extends Component {
       );
     }
 
-    return <ol className="List">{listItems}</ol>;
+    return <ol className="list">{listItems}</ol>;
   }
 }
 

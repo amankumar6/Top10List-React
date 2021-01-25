@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../css/other.css";
+import "../../style/other.sass";
 
 export class Help extends Component {
   render() {

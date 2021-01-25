@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../css/footer.css";
+import "../../style/footer.sass";
 
 export class Footer extends Component {
   render() {
@@ -34,12 +34,12 @@ export class Footer extends Component {
                 <li>
                   <a
                     className="grey-text text-lighten-3"
-                    href="mailto:sp.top10list@gamil.com"
+                    href="mailto:sp.top10list@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i className="fad fa-envelope"></i>
-                    &nbsp; sp.top10list@gamil.com
+                    &nbsp; sp.top10list@gmail.com
                   </a>
                 </li>
               </ul>
@@ -101,7 +101,7 @@ export class Footer extends Component {
           </div>
         </div>
         <div className="footer-copyright">
-          <div className="container">© 2020 Top10List All Rights Reserved</div>
+          © 2020 Top10List All Rights Reserved
         </div>
       </footer>
     );
