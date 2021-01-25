@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import "../../css/other.css";
 
 export class Feedback extends Component {
+  // Save my name, email, and website in this browser for the next time I comment.
+  nameRef = React.createRef();
+  emailRef = React.createRef();
+  contactRef = React.createRef();
+  describeRef = React.createRef();
+
+  createData = (e) => {
+    e.preventDefault();
+    const formData = {
+      name: this.nameRef.current.value,
+      email: this.emailRef.current.value,
+      contact: parseFloat(this.contactRef.current.value),
+      describe: this.describeRef.current.value,
+    };
+    this.props.formData(formData);
+    e.currentTarget.reset();
+  };
+
   render() {
     return (
       <div className="feedback">
@@ -11,45 +29,22 @@ export class Feedback extends Component {
             We would love to hear your thoughts, suggestions, concerns or
             problems with anything so we can improve!
           </p>
-          <form action="#">
+          <form onSubmit={this.createData}>
             <div className="row">
-              <div className="col s12">
-                <p>Feedback Type</p>
-                <br />
-                <div className="col s12 m7 feedbackType">
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>Comments</span>
-                  </label>
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>Suggestions</span>
-                  </label>
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>Questions</span>
-                  </label>
+              <div className="inputName col s12">
+                <div className="input-field col s6">
+                  <input id="name" ref={this.nameRef} type="text" required />
+                  <label for="name">Name</label>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="input-field col s12">
-                <textarea
-                  id="describe"
-                  className="materialize-textarea"
-                ></textarea>
-                <label for="describe">Describe Your Feedback:</label>
-              </div>
-              <div className="input-field col s6">
-                <input id="first_name" type="text" />
-                <label for="first_name">First Name</label>
-              </div>
-              <div className="input-field col s6">
-                <input id="last_name" type="text" />
-                <label for="last_name">Last Name</label>
-              </div>
-              <div className="input-field col s6">
-                <input id="email" type="email" className="validate" />
+              <div className="input-field col s6 offset-s0">
+                <input
+                  id="email"
+                  ref={this.emailRef}
+                  type="email"
+                  className="validate"
+                  required
+                />
                 <label for="email">Email</label>
                 <span
                   className="helper-text"
@@ -58,8 +53,16 @@ export class Feedback extends Component {
                 ></span>
               </div>
               <div className="input-field col s6">
-                <input id="icon_contact" type="tel" />
-                <label for="icon_contact">Contact Number</label>
+                <input id="contact" ref={this.contactRef} type="tel" required />
+                <label for="contact">Contact Number</label>
+              </div>
+              <div className="input-field col s12">
+                <textarea
+                  id="describe"
+                  ref={this.describeRef}
+                  className="materialize-textarea"
+                ></textarea>
+                <label for="describe">Describe</label>
               </div>
             </div>
             <div className="row">
