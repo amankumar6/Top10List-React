@@ -6,22 +6,39 @@ import Help from "./pages/Help";
 import Feedback from "./pages/Feedback";
 import NavBarAlt from "./view/NavBarAlt";
 import Footer from "./view/Footer";
+import base from "../base";
 
 export class App extends Component {
   state = {
     myData: {},
   };
 
+  componentDidMount() {
+    this.ref = base.syncState("FeedBack", {
+      context: this,
+      state: "myData",
+    });
+  }
+
+  formatDate = () => {
+    let today = new Date(),
+      date = String(today.getDate()).padStart(2, "0"),
+      month = String(today.getMonth() + 1).padStart(2, "0"),
+      year = today.getFullYear(),
+      fullDate = date + "-" + month + "-" + year,
+      currentTime =
+        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    return "-" + fullDate + "-" + currentTime;
+  };
+
   formData = (data) => {
     const myNewData = { ...this.state.myData };
-    let currentDate = new Date();
-    currentDate = JSON.stringify(currentDate);
-    myNewData[`data${currentDate}`] = data;
+    myNewData[`${data.name.replace(/ /g, "_")}${this.formatDate()}`] = data;
     this.setState({
       myData: myNewData,
     });
   };
-  
+
   render() {
     return (
       <BrowserRouter>

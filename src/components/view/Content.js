@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropType from "prop-types";
 import animeContent from "../Content/animeContent";
 import gamesContent from "../Content/gamesContent";
 import moviesContent from "../Content/moviesContent";
@@ -7,6 +8,10 @@ import webSeriesContent from "../Content/webSeriesContent";
 import "../../css/list.css";
 
 export class Content extends Component {
+  static propType = {
+    whatContentShouldBeShown: PropType.string,
+  };
+
   listContent = (title, content, src) => {
     return (
       <li key={title}>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropType from "prop-types";
 import "../../css/other.css";
 
 export class Feedback extends Component {
@@ -7,6 +8,10 @@ export class Feedback extends Component {
   emailRef = React.createRef();
   contactRef = React.createRef();
   describeRef = React.createRef();
+
+  static propType = {
+    formData: PropType.func,
+  };
 
   createData = (e) => {
     e.preventDefault();
@@ -34,7 +39,7 @@ export class Feedback extends Component {
               <div className="inputName col s12">
                 <div className="input-field col s6">
                   <input id="name" ref={this.nameRef} type="text" required />
-                  <label for="name">Name</label>
+                  <label htmlFor="name">Name</label>
                 </div>
               </div>
               <div className="input-field col s6 offset-s0">
@@ -45,7 +50,7 @@ export class Feedback extends Component {
                   className="validate"
                   required
                 />
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <span
                   className="helper-text"
                   data-error="We can’t quite understand that email address. Can you try again?"
@@ -54,7 +59,7 @@ export class Feedback extends Component {
               </div>
               <div className="input-field col s6">
                 <input id="contact" ref={this.contactRef} type="tel" required />
-                <label for="contact">Contact Number</label>
+                <label htmlFor="contact">Contact Number</label>
               </div>
               <div className="input-field col s12">
                 <textarea
@@ -62,7 +67,7 @@ export class Feedback extends Component {
                   ref={this.describeRef}
                   className="materialize-textarea"
                 ></textarea>
-                <label for="describe">Describe</label>
+                <label htmlFor="describe">Describe</label>
               </div>
             </div>
             <div className="row">
