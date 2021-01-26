@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../../style/navBarAlt.sass"
+import M from "materialize-css/dist/js/materialize.min.js";
+import "../../style/navBarAlt.sass";
 
 export class NavBarAlt extends Component {
+  componentDidMount() {
+    var elems = document.querySelectorAll(".sidenav");
+    var instances = M.Sidenav.init(elems, {});
+  }
+  
   render() {
     return (
       <React.Fragment>
@@ -11,7 +17,7 @@ export class NavBarAlt extends Component {
             <span className="brand-logo">
               <Link to="/">Top 10 List</Link>
             </span>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+            <a href="/#" data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">

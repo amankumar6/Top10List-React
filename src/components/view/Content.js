@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PropType from "prop-types";
-import animeContent from "../Content/animeContent";
-import gamesContent from "../Content/gamesContent";
-import moviesContent from "../Content/moviesContent";
-import musicVideoContent from "../Content/musicVideoContent";
-import webSeriesContent from "../Content/webSeriesContent";
+import animeContent from "../../content/animeContent";
+import gamesContent from "../../content/gamesContent";
+import moviesContent from "../../content/moviesContent";
+import musicVideoContent from "../../content/musicVideoContent";
+import webSeriesContent from "../../content/webSeriesContent";
 import "../../style/list.sass";
 
 export class Content extends Component {

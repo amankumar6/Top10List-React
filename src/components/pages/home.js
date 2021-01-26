@@ -1,9 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import M from "materialize-css/dist/js/materialize.min.js";
 import "../../style/home.sass";
 import Content from "../view/Content";
 
 export class Home extends Component {
+  componentDidMount() {
+    var elems = document.querySelectorAll(".tabs");
+    var instances = M.Tabs.init(elems, {});
+    var elems2 = document.querySelectorAll(".sidenav");
+    var instances2 = M.Sidenav.init(elems2, {});
+  }
+
   render() {
     return (
       <div className="home">
@@ -12,7 +20,7 @@ export class Home extends Component {
             <span className="brand-logo">
               <Link to="/">Top 10 List</Link>
             </span>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+            <a href="/#" data-target="mobile-demo" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -30,12 +38,12 @@ export class Home extends Component {
           <div className="nav-content">
             <ul className="tabs tabs-transparent">
               <li className="tab">
-                <a href="#anime">Anime</a>
+                <a className="active" href="#anime">
+                  Anime
+                </a>
               </li>
               <li className="tab">
-                <a className="active" href="#games">
-                  Games
-                </a>
+                <a href="#games">Games</a>
               </li>
               <li className="tab">
                 <a href="#movies">Movies</a>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Faq from "../Content/faq";
+import Faq from "../../content/faq";
 import "../../style/other.sass";
 
 export class Help extends Component {
