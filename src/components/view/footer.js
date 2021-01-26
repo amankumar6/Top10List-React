@@ -5,16 +5,16 @@ export class Footer extends Component {
   render() {
     return (
       <footer className="page-footer">
-        <div className="container">
+        <div className="footer-container">
           <div className="row">
-            <div className="col l6 s12">
+            <div className="col l3 offset-l1 s12">
               <h5 className="white-text">Top 10 List</h5>
               <p className="grey-text text-lighten-4">
                 A trustworthy site that you can blindly rely on.
               </p>
             </div>
-            <div className="col l4 offset-l2 s12">
-              <h5 className="white-text">Contact US</h5>
+            <div className="col l3 offset-l1 s12">
+              <h5 className="white-text">Contact Me</h5>
               <ul>
                 <li>
                   <i className="fad fa-phone-alt"></i>
@@ -44,10 +44,35 @@ export class Footer extends Component {
                 </li>
               </ul>
             </div>
+            <div className="col l3 offset-l1 s12">
+              <h5 className="white-text">Support Me On</h5>
+              <ul className="supportMe">
+                <li>
+                  <a href="https://www.buymeacoffee.com/amankumar">
+                    <img
+                      align="left"
+                      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                      height="45"
+                      alt="amankumar"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://paypal.me/amankumar062">
+                    <img
+                      align="left"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1280px-PayPal.svg.png"
+                      height="45"
+                      alt="amankumar"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="row container center-align">
             <div className="col s12">
-              <h5 className="white-text">Follow Us </h5>
+              <h5 className="white-text">Follow Me on </h5>
               <span className="social-icon">
                 <a
                   href="https://www.facebook.com/profile.php?id=100006823652391"
