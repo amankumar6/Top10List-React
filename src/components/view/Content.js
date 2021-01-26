@@ -31,6 +31,7 @@ export class Content extends Component {
       </li>
     );
   };
+  
   render() {
     let listItems;
     if (this.props.whatContentShouldBeShown === "Anime") {
