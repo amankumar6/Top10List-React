@@ -19,7 +19,7 @@ export class NavBarAlt extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/feedback">FeedBack</Link>
+                <Link to="/feedback">Feedback</Link>
               </li>
               <li>
                 <Link to="/help">Help</Link>
@@ -33,7 +33,7 @@ export class NavBarAlt extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/feedback">FeedBack</Link>
+            <Link to="/feedback">Feedback</Link>
           </li>
           <li>
             <Link to="/help">Help</Link>

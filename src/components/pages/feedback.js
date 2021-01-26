@@ -15,7 +15,7 @@ export class Feedback extends Component {
 
   componentDidMount() {
     const localStorageDetails = JSON.parse(
-      localStorage.getItem("FeedBackDetails")
+      localStorage.getItem("FeedbackDetails")
     );
     if (localStorageDetails) {
       this.nameRef.current.value = localStorageDetails.name;
@@ -37,7 +37,7 @@ export class Feedback extends Component {
         email: this.emailRef.current.value,
         contact: parseFloat(this.contactRef.current.value),
       };
-      localStorage.setItem("FeedBackDetails", JSON.stringify(localData));
+      localStorage.setItem("FeedbackDetails", JSON.stringify(localData));
     }
     this.props.formData(formData);
     e.currentTarget.reset();
@@ -48,7 +48,7 @@ export class Feedback extends Component {
       <div className="feedback">
         <div className="container">
           <form onSubmit={this.createData}>
-            <h1>FeedBack</h1>
+            <h1>Feedback</h1>
             <p>
               We would love to hear your thoughts, suggestions, concerns or
               problems with anything so we can improve!
@@ -60,7 +60,7 @@ export class Feedback extends Component {
                   <label
                     htmlFor="name"
                     className={`${
-                      localStorage.getItem("FeedBackDetails") ? "active" : ""
+                      localStorage.getItem("FeedbackDetails") ? "active" : ""
                     }`}
                   >
                     Name
@@ -78,7 +78,7 @@ export class Feedback extends Component {
                 <label
                   htmlFor="email"
                   className={`${
-                    localStorage.getItem("FeedBackDetails") ? "active" : ""
+                    localStorage.getItem("FeedbackDetails") ? "active" : ""
                   }`}
                 >
                   Email
@@ -94,7 +94,7 @@ export class Feedback extends Component {
                 <label
                   htmlFor="contact"
                   className={`${
-                    localStorage.getItem("FeedBackDetails") ? "active" : ""
+                    localStorage.getItem("FeedbackDetails") ? "active" : ""
                   }`}
                 >
                   Contact Number
@@ -106,7 +106,7 @@ export class Feedback extends Component {
                   ref={this.discRef}
                   className="materialize-textarea"
                 ></textarea>
-                <label htmlFor="disc">Your FeedBack</label>
+                <label htmlFor="disc">Your Feedback</label>
               </div>
               <div className="input-field col s12">
                 <p>
@@ -120,8 +120,8 @@ export class Feedback extends Component {
                 </p>
               </div>
             </div>
-            <div className="row">
-              <div className="input-field col s2 offset-s5">
+            <div className="row button">
+              <div className="input-field">
                 <button
                   className="btn waves-effect waves-light"
                   type="submit"
