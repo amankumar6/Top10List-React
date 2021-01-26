@@ -1,4 +1,4 @@
-const list = [{
+const source = [{
         title: "Minecraft",
         content: '“Minecraft is a sandbox video game developed by Mojang Studios. Created by Markus "Notch" Persson in the Java programming language and released as a public alpha for personal computers in 2009, the game was officially released in November 2011, with Jens Bergensten taking over development around then. Minecraft has since been ported to various platforms and become the best-selling video game of all time, with 200 million copies sold across all platforms and 126 million monthly active users as of 2020.',
         src: "https://www.youtube.com/embed/MmB9b5njVbA",
@@ -50,4 +50,4 @@ const list = [{
     },
 ]
 
-export default list;
+export default source;

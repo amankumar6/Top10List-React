@@ -1,4 +1,4 @@
-const list = [{
+const source = [{
     title: "The Shawshank Redemption(1994)",
     ratting: "9.2",
     content: `The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. It tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler Ellis "Red" Redding (Morgan Freeman), and becomes instrumental in a money-laundering operation led by the prison warden Samuel Norton (Bob Gunton). William Sadler, Clancy Brown, Gil Bellows, and James Whitmore appear in supporting roles.`,
@@ -29,9 +29,9 @@ const list = [{
     src: "https://www.youtube.com/embed/2L4IhbF2WK0",
 },
 {
-    title: "Schindler's List (1993)",
+    title: "Schindler's source (1993)",
     ratting: "8.9",
-    content: "Schindler's List is a 1993 American historical drama film directed and produced by Steven Spielberg and written by Steven Zaillian. It is based on the 1982 novel Schindler's Ark by Australian novelist Thomas Keneally. The film follows Oskar Schindler, a Sudeten German businessman who together with his wife Emilie Schindler saved more than a thousand mostly Polish-Jewish refugees from the Holocaust by employing them in his factories during World War II. It stars Liam Neeson as Schindler, Ralph Fiennes as SS officer Amon Göth, and Ben Kingsley as Schindler's Jewish accountant Itzhak Stern",
+    content: "Schindler's source is a 1993 American historical drama film directed and produced by Steven Spielberg and written by Steven Zaillian. It is based on the 1982 novel Schindler's Ark by Australian novesource Thomas Keneally. The film follows Oskar Schindler, a Sudeten German businessman who together with his wife Emilie Schindler saved more than a thousand mostly Polish-Jewish refugees from the Holocaust by employing them in his factories during World War II. It stars Liam Neeson as Schindler, Ralph Fiennes as SS officer Amon Göth, and Ben Kingsley as Schindler's Jewish accountant Itzhak Stern",
     src: "https://www.youtube.com/embed/gG22XNhtnoY",
 },
 {
@@ -60,4 +60,4 @@ const list = [{
 },
 ]
 
-export default list;
+export default source;

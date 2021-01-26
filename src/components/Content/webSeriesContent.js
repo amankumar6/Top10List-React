@@ -1,4 +1,4 @@
-const list = [{
+const source = [{
     title: "Planet Earth II",
     ratting: "9.5",
     content: `Planet Earth II is a 2016 British nature documentary series produced by the BBC as a sequel to Planet Earth, which was broadcast in 2006. The series is presented and narrated by Sir David Attenborough with the main theme music composed by Hans Zimmer. The first trailer was released on 9 October 2016, and the series premiered on 6 November 2016 in the United Kingdom on BBC One and BBC One HD. Planet Earth II is the first television series produced by the BBC in Ultra-high-definition (4K). A sequel titled Planet Earth III is currently announced and planned to air in 2022.`,
@@ -49,7 +49,7 @@ const list = [{
 {
     title: "Rick and Morty",
     ratting: "9.2",
-    content: `Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows Rick Sanchez, an alcoholic, nihilistic super-scientist, and his easily distressed yet good-hearted grandson, Morty Smith, on their adventures to alternate dimensions and planets. These adventures commonly cause trouble for Morty's family, Jerry, Beth, and Summer, who are often caught up in the mayhem.`,
+    content: `Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows Rick Sanchez, an alcoholic, nihisourceic super-scientist, and his easily distressed yet good-hearted grandson, Morty Smith, on their adventures to alternate dimensions and planets. These adventures commonly cause trouble for Morty's family, Jerry, Beth, and Summer, who are often caught up in the mayhem.`,
     src: "https://www.youtube.com/embed/_uUcMwsR5hg",
 },
 {
@@ -60,4 +60,4 @@ const list = [{
 },
 ]
 
-export default list;
+export default source;

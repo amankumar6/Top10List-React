@@ -1,4 +1,4 @@
-const list = [{
+const source = [{
         title: "Baby Shark Dance",
         views: "7.11",
         content: `"Baby Shark" is a children's song featuring a family of sharks. Popular as a campfire song, it has taken off since 2016, when Pinkfong, a South Korean education company, turned it into a video that spread virally through social media, online video, and radio. Pinkfong's version has become the most-viewed video on YouTube of all time in November 2020 with over 7.11 billion views.`,
@@ -7,7 +7,7 @@ const list = [{
     {
         title: "Despacito",
         views: "7.05",
-        content: `If you take a look at Billboard’s Hot 100 Songs of 2017, you’ll find Despacito in the number two spot. It’s pretty clear that popular songs can also become highly watched YouTube videos. And with over 6.15 billion video views, it’s pretty clear why this is the most watched YouTube video. You have the music repeat factor where you watch it over again just to hear the song. And back in 2017 Spotify was popular, but not as popular as it is today. Despacito’s video has all the trademarks of a popular music video: dance sequences, good-looking people, palm trees, naturescapes, club scene, and of course the catchiest song to sing along to. The song is entirely in Spanish, making it one of the three on this top ten most viewed YouTube videos list that aren’t in English.`,
+        content: `If you take a look at Billboard’s Hot 100 Songs of 2017, you’ll find Despacito in the number two spot. It’s pretty clear that popular songs can also become highly watched YouTube videos. And with over 6.15 billion video views, it’s pretty clear why this is the most watched YouTube video. You have the music repeat factor where you watch it over again just to hear the song. And back in 2017 Spotify was popular, but not as popular as it is today. Despacito’s video has all the trademarks of a popular music video: dance sequences, good-looking people, palm trees, naturescapes, club scene, and of course the catchiest song to sing along to. The song is entirely in Spanish, making it one of the three on this top ten most viewed YouTube videos source that aren’t in English.`,
         src: "https://www.youtube.com/embed/kJQP7kiw5Fk",
     },
     {
@@ -25,7 +25,7 @@ const list = [{
     {
         title: "Uptown Funk",
         views: "4",
-        content: "Uptown Funk was the number one song of 2015 on the Billboard Hot 100. According to Joe Bennett, a music professor at Bath Spa University, the song’s popularity is due to two key elements: a lack of a chorus and a slower tempo. These two elements make the song stand out. And as we’ve seen with other songs on this list, a number one hit makes it easier to score one of the most viewed YouTube videos. Another interesting tidbit is that Bruno Mars performed at the 2014 Super Bowl halftime show, which helped elevate his popularity and make his video more viral. The video itself has an old-school feel to it which makes it a unique watch that you don’t really see in music videos anymore.",
+        content: "Uptown Funk was the number one song of 2015 on the Billboard Hot 100. According to Joe Bennett, a music professor at Bath Spa University, the song’s popularity is due to two key elements: a lack of a chorus and a slower tempo. These two elements make the song stand out. And as we’ve seen with other songs on this source, a number one hit makes it easier to score one of the most viewed YouTube videos. Another interesting tidbit is that Bruno Mars performed at the 2014 Super Bowl halftime show, which helped elevate his popularity and make his video more viral. The video itself has an old-school feel to it which makes it a unique watch that you don’t really see in music videos anymore.",
         src: "https://www.youtube.com/embed/OPf0YbXqDm0",
     },
     {
@@ -37,7 +37,7 @@ const list = [{
     {
         title: "Sorry",
         views: "3.36",
-        content: 'Sorry, the sixth most watched Music video on YouTube, is quite a unique music video. Throughout the entire three minutes and 25 seconds, I waited… and waited… for Justin Bieber. It’s basically a Waiting for Godot music video because *spoiler alert* the Biebs just never shows up. Instead, the entire music video features an all-female dance crew in neon outfits and expressive faces. One of the non-song related reasons why this video might’ve been popular is because you can literally dance along with the simple moves. Some might’ve chosen to add this to a workout playlist on YouTube which can help elevate the number of views it gets. But aside from that, Justin Bieber currently has four music videos with over one billion YouTube views, so it’s likely that his 44.45 million YouTube subscribers help boost his videos’ viral success.',
+        content: 'Sorry, the sixth most watched Music video on YouTube, is quite a unique music video. Throughout the entire three minutes and 25 seconds, I waited… and waited… for Justin Bieber. It’s basically a Waiting for Godot music video because *spoiler alert* the Biebs just never shows up. Instead, the entire music video features an all-female dance crew in neon outfits and expressive faces. One of the non-song related reasons why this video might’ve been popular is because you can literally dance along with the simple moves. Some might’ve chosen to add this to a workout playsource on YouTube which can help elevate the number of views it gets. But aside from that, Justin Bieber currently has four music videos with over one billion YouTube views, so it’s likely that his 44.45 million YouTube subscribers help boost his videos’ viral success.',
         src: "https://www.youtube.com/embed/fRh_vgS2dFE",
     },
     {
@@ -49,7 +49,7 @@ const list = [{
     {
         title: "Roar",
         views: "3.2",
-        content: "Katy Perry is the first female on this list so far with her ever-catchy song and video for Roar. In the video, Perry is stranded in a jungle after a plane crash and is forced to survive on her own after her partner is eaten by a tiger. The comical video shows Perry constantly facing her fears, striving to survive, and taming animals while wearing scantily clad outfits. While Katy’s song was popular, landing at number 10 on the top 100 songs in 2013, her sizable fanbase of 33 million subscribers helped launch her view to a 2.8 billion view count. Plus, as with any lead single, it usually gets the biggest budget and most hype, which helps her land the most viewed YouTube video for a female artist.",
+        content: "Katy Perry is the first female on this source so far with her ever-catchy song and video for Roar. In the video, Perry is stranded in a jungle after a plane crash and is forced to survive on her own after her partner is eaten by a tiger. The comical video shows Perry constantly facing her fears, striving to survive, and taming animals while wearing scantily clad outfits. While Katy’s song was popular, landing at number 10 on the top 100 songs in 2013, her sizable fanbase of 33 million subscribers helped launch her view to a 2.8 billion view count. Plus, as with any lead single, it usually gets the biggest budget and most hype, which helps her land the most viewed YouTube video for a female artist.",
         src: "https://www.youtube.com/embed/CevxZvSJLk8",
     },
     {
@@ -60,4 +60,4 @@ const list = [{
     },
 ]
 
-export default list;
+export default source;

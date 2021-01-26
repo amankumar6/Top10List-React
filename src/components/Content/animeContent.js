@@ -1,4 +1,4 @@
-const list = [{
+const source = [{
         title: "Full Metal Alchemist Brotherhood (Great Story)",
         content: "This, is clearly the best anime out there. Edward Elric, a young, brilliant alchemist, has lost much in his twelve-year life: when he and his brother Alphonse try to resurrect their dead mother through the forbidden act of human transmutation, Edward loses his brother as well as two of his limbs. With his supreme alchemy skills, Edward binds Alphonse's soul to a large suit of armor.",
         src: "https://www.youtube.com/embed/dqDB6gQLbPM",
@@ -50,4 +50,4 @@ const list = [{
     },
 ]
 
-export default list;
+export default source;
