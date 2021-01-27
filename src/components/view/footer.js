@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import "../../style/footer.sass";
 
 export class Footer extends Component {
+  getYear = () => {
+    let year = new Date();
+    return year.getFullYear();
+  };
+
   render() {
     return (
       <footer className="page-footer">
@@ -75,7 +80,7 @@ export class Footer extends Component {
               <h5 className="white-text">Follow Me on </h5>
               <span className="social-icon">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100006823652391"
+                  href="https://www.facebook.com/amankumar062/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -101,7 +106,7 @@ export class Footer extends Component {
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a
-                  href="https://www.pinterest.com/amankumar062/boards/"
+                  href="https://www.pinterest.com/amankumar062/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -115,7 +120,7 @@ export class Footer extends Component {
                   <i className="fab fa-reddit"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/aman-kumar-50bba8184/"
+                  href="https://www.linkedin.com/in/amankumar6/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -126,7 +131,7 @@ export class Footer extends Component {
           </div>
         </div>
         <div className="footer-copyright">
-          © 2020 Top10List All Rights Reserved
+          © {this.getYear()} Top10List All Rights Reserved
         </div>
       </footer>
     );

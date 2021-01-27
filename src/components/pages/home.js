@@ -6,10 +6,10 @@ import Content from "../view/Content";
 
 export class Home extends Component {
   componentDidMount() {
-    var elems = document.querySelectorAll(".tabs");
-    var instances = M.Tabs.init(elems, {});
-    var elems2 = document.querySelectorAll(".sidenav");
-    var instances2 = M.Sidenav.init(elems2, {});
+    var elems = document.querySelectorAll(".tabs"),
+      elems2 = document.querySelectorAll(".sidenav");
+    M.Tabs.init(elems, {});
+    M.Sidenav.init(elems2, {});
   }
 
   render() {

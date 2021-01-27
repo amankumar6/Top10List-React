@@ -6,7 +6,7 @@ import "../../style/navBarAlt.sass";
 export class NavBarAlt extends Component {
   componentDidMount() {
     var elems = document.querySelectorAll(".sidenav");
-    var instances = M.Sidenav.init(elems, {});
+    M.Sidenav.init(elems, {});
   }
   
   render() {

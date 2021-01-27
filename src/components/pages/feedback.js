@@ -21,6 +21,7 @@ export class Feedback extends Component {
       this.nameRef.current.value = localStorageDetails.name;
       this.emailRef.current.value = localStorageDetails.email;
       this.contactRef.current.value = localStorageDetails.contact;
+      this.checkBoxRef.current.checked = true;
     }
   }
 
@@ -39,8 +40,18 @@ export class Feedback extends Component {
       };
       localStorage.setItem("FeedbackDetails", JSON.stringify(localData));
     }
+    if (
+      localStorage.getItem("FeedbackDetails") &&
+      !this.checkBoxRef.current.checked
+    )
+      localStorage.removeItem("FeedbackDetails");
+
     this.props.formData(formData);
     e.currentTarget.reset();
+  };
+
+  checkClassName = () => {
+    return localStorage.getItem("FeedbackDetails") ? "active" : null;
   };
 
   render() {
@@ -57,12 +68,7 @@ export class Feedback extends Component {
               <div className="inputName col s12">
                 <div className="input-field col m6 s12">
                   <input id="name" ref={this.nameRef} type="text" required />
-                  <label
-                    htmlFor="name"
-                    className={`${
-                      localStorage.getItem("FeedbackDetails") ? "active" : ""
-                    }`}
-                  >
+                  <label htmlFor="name" className={this.checkClassName()}>
                     Name
                   </label>
                 </div>
@@ -75,12 +81,7 @@ export class Feedback extends Component {
                   className="validate"
                   required
                 />
-                <label
-                  htmlFor="email"
-                  className={`${
-                    localStorage.getItem("FeedbackDetails") ? "active" : ""
-                  }`}
-                >
+                <label htmlFor="email" className={this.checkClassName()}>
                   Email
                 </label>
                 <span
@@ -91,12 +92,7 @@ export class Feedback extends Component {
               </div>
               <div className="input-field col m6 s12">
                 <input id="contact" ref={this.contactRef} type="tel" required />
-                <label
-                  htmlFor="contact"
-                  className={`${
-                    localStorage.getItem("FeedbackDetails") ? "active" : ""
-                  }`}
-                >
+                <label htmlFor="contact" className={this.checkClassName()}>
                   Contact Number
                 </label>
               </div>
