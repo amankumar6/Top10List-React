@@ -12,10 +12,14 @@ export class Content extends Component {
     whatContentShouldBeShown: PropType.string,
   };
 
-  listContent = (title, content, src) => {
+  listContent = (title, content, src, ratting) => {
     return (
       <li key={title}>
         <p className="listTitle"> {title}: </p>
+        {(typeof ratting == 'string') ? <p className="ratting"> IMDB ratting {ratting} </p> : '' }
+
+        {(typeof ratting == 'number') ? <p className="views"> {ratting} Billion Views on Youtube </p> : '' }
+
         <div className="main-content">
           <iframe
             title={title}
@@ -45,18 +49,18 @@ export class Content extends Component {
       );
     }
     if (this.props.whatContentShouldBeShown === "Movies") {
-      listItems = moviesContent.map(({ title, content, src }) =>
-        this.listContent(title, content, src)
+      listItems = moviesContent.map(({ title, content, src, ratting }) =>
+        this.listContent(title, content, src, ratting)
       );
     }
     if (this.props.whatContentShouldBeShown === "MusicVideo") {
-      listItems = musicVideoContent.map(({ title, content, src }) =>
-        this.listContent(title, content, src)
+      listItems = musicVideoContent.map(({ title, content, src, views}) =>
+        this.listContent(title, content, src, views)
       );
     }
     if (this.props.whatContentShouldBeShown === "WebSeries") {
-      listItems = webSeriesContent.map(({ title, content, src }) =>
-        this.listContent(title, content, src)
+      listItems = webSeriesContent.map(({ title, content, src, ratting }) =>
+        this.listContent(title, content, src, ratting)
       );
     }
 

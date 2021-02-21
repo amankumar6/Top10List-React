@@ -6,6 +6,7 @@ import Feedback from "./pages/Feedback";
 import NavBarAlt from "./view/NavBarAlt";
 import Footer from "./view/Footer";
 import "../style/App.sass";
+import M from "materialize-css/dist/js/materialize.min.js";
 import base from "../base";
 
 export class App extends Component {
@@ -41,7 +42,7 @@ export class App extends Component {
     this.setState({
       myData: myNewData,
     });
-    alert("FeedBack has been submitted Successfully!!");
+    M.toast({html: 'FeedBack has been submitted Successfully!!'})
   };
 
   render() {
