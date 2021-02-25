@@ -1,6 +1,6 @@
 # 𝚃𝚘𝚙𝟷𝟶𝙻𝚒𝚜𝚝
 
-[![Top10List](top10list-react.gif "Top10List")](top10list-react.netlify.app/ )
+[![Top10List](top10list-react.gif "Top10List")](https://top10list.ml/)
 
 Top10List is a website that is made using ReactJs, where you can see the Top 10 List of Anime, Games, Movies, Music Videos, and Web Series.
 
