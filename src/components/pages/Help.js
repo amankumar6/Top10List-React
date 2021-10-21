@@ -17,7 +17,7 @@ export class Help extends Component {
         <div className="container">
           <h1>HELP</h1>
           <div>
-            <h4>Frequintly Asked Questions:</h4>
+            <h4>Frequently Asked Questions:</h4>
             {faqContent}
           </div>
         </div>
