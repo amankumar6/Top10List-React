@@ -22,18 +22,17 @@ export class Footer extends Component {
               <h5 className="white-text">Contact Me</h5>
               <ul>
                 <li>
-                  <i className="fad fa-phone-alt"></i>
-                  &nbsp; +917209431852
+                  
                 </li>
                 <li>
                   <a
                     className="grey-text text-lighten-3"
-                    href="http://wa.me/917209431852"
+                    href="https://amankumar.ml/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-whatsapp"></i>
-                    &nbsp; +917209431852
+                    <i className="fad fa-globe"></i>
+                    &nbsp; Aman Kumar
                   </a>
                 </li>
                 <li>
